@@ -68,9 +68,7 @@
           >
           <field-messages name="email" show="$dirty">
             <div slot="required" class="alert alert-danger mt-2">Campo requerido</div>
-            <div slot="email" class="alert alert-danger mt-2">
-              Email invalido
-            </div>
+            <div slot="email" class="alert alert-danger mt-2">Email invalido</div>
           </field-messages>
         </validate>
 
@@ -130,7 +128,7 @@
           delete data.name
           console.log(data);
           await this.axios.post(this.postUrl,data,{'content-type':'application/json'})
-          console.log(`Usuario posteado ${data}`);
+          console.log(`Usuario agregado${data}`);
         } catch (error) {
           console.error(error);
         }
